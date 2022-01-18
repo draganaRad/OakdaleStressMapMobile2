@@ -1,0 +1,18 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Glenayre Elementary"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.88778781890868,
+          49.27404189259574
+        ]
+      }
+    }
+  ]
+}

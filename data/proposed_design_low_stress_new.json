@@ -1,0 +1,25 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "name": "Neighbourhood Greenway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88082212209703,
+            49.26987500158247
+          ],
+          [
+            -122.88083285093307,
+            49.270569799545136
+          ]
+        ]
+      }
+    }
+  ]
+}

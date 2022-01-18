@@ -1,0 +1,24 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/196720005",
+        "access": "yes",
+        "covered": "no",
+        "leisure": "swimming_pool",
+        "location": "outdoor",
+        "name": "Westhill Pool",
+        "sport": "swimming"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8797197341919,
+          49.28418376466922
+        ]
+      }
+    }
+  ]
+}

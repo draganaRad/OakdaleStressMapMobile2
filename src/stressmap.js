@@ -1,13 +1,32 @@
 
 // lines (layers)
-const legendSettings = [{ color: '#4292C6', key: 'LS', title: 'Low Stress', checked: true},
-{ color: '#F16913', key: 'HS', title: 'High Stress', checked: true},
-{ key: 'desig', title: 'Bike Designated Only', checked: true}]
+const legendSettings = [
+  {color: '#4292C6', key: 'LS', title: 'Low Stress', checked: true},
+  {color: '#F16913', key: 'HS', title: 'High Stress', checked: true},
+  {color: '#31a354', key: 'P_LS', title: 'Proposed Low Stress', checked: true},
+  {color: '#f03b20', key: 'P_HS', title: 'Proposed High Stress', checked: true},
+  {key: 'desig', title: 'Bike Designated Only', checked: true},
+  {key: 'amenity', title: 'Amenities', checked: true}]
 
-const layerSettings = [{key: 'LSdesig', color: '#4292C6', url: 'data/design_low_stress.json'},
-{key: 'HSdesig', color: '#F16913', url: 'data/design_high_stress.json'},
-{key: 'LSother', color: '#4292C6', url: 'data/low_stress.json'},
-{key: 'HSother', color: '#F16913', url: 'data/high_stress.json'}]
+const layerSettings = [
+  {key: 'LSdesig', color: '#4292C6', dashed: false, url: 'data/design_low_stress.json'},
+  {key: 'HSdesig', color: '#F16913', dashed: false, url: 'data/design_high_stress.json'},
+  {key: 'LSother', color: '#4292C6', dashed: false, url: 'data/low_stress.json'},
+  {key: 'HSother', color: '#F16913', dashed: false, url: 'data/high_stress.json'},
+
+  {key: 'P_LSdesig', color: '#31a354', dashed: false, url: 'data/proposed_design_low_stress_existing.json'},
+  {key: 'P_HSdesig', color: '#f03b20', dashed: false, url: 'data/proposed_design_high_stress_existing.json'},
+  {key: 'P_LSother', color: '#31a354', dashed: false, url: 'data/proposed_low_stress_existing.json'},
+  {key: 'P_HSother', color: '#f03b20', dashed: false, url: 'data/proposed_high_stress_existing.json'},
+
+  {key: 'P_LSdesig_new', color: '#31a354', dashed: true, url: 'data/proposed_design_low_stress_new.json'},
+  {key: 'P_HSdesig_new', color: '#f03b20', dashed: true, url: 'data/proposed_design_high_stress_new.json'},
+  {key: 'P_LSother_new', color: '#31a354', dashed: true, url: 'data/proposed_low_stress_new.json'},
+  {key: 'P_HSother_new', color: '#f03b20', dashed: true, url: 'data/proposed_high_stress_new.json'},
+
+  {key: 'park', color: '#f03b20', dashed: false, polygon: true, url: 'data/amenity_park.json'},
+  {key: 'pool', color: '#f03b20', dashed: false, point:true, url: 'data/amenity_pool.json'},
+  {key: 'school', color: '#f03b20', dashed: false, point:true, url: 'data/amenity_school.json'}]
 
 var lineWeight = 2
 if (!L.Browser.mobile) {
@@ -21,13 +40,13 @@ var legendChecks = {}; //dictionary of legend checkbox ids(keys) and their state
 var layers = {};  //dictionary of layers with keys from settings
 
 // Create variable to hold map element, give initial settings to map
-var centerCoord = [49.27857, -122.79942] 
+var centerCoord = [49.266787, -122.887519] 
 if (L.Browser.mobile) {
   // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
   var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-  var map = L.map("map", { center: centerCoord, zoom: 11, renderer: myRenderer, zoomControl: false });
+  var map = L.map("map", { center: centerCoord, zoom: 14, renderer: myRenderer, zoomControl: false });
 } else {
-  var map = L.map("map", { center: centerCoord, zoom: 12 });
+  var map = L.map("map", { center: centerCoord, zoom: 15 });
 }
 L.tileLayer(
   'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -53,7 +72,10 @@ addLegend()
 document.getElementById('legendbtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
 document.getElementById('closebtn').onclick = function () { toggleDisplay(['legendbtn', 'legend']) };
 
-addLayers()
+// layers
+layerGroup.addTo(map);
+createLayers();
+addLayers();
 
 ///// Functions ////
 
@@ -135,7 +157,6 @@ function toggleDisplay(elementIds) {
 }
 
 function toggleLayer(checkbox) { 
-
   if (checkbox.checked){
       legendChecks[checkbox.id] = true
   }else{
@@ -143,43 +164,48 @@ function toggleLayer(checkbox) {
   }
 
   layerGroup.clearLayers()
-  if (legendChecks['LS'] == true)
-  {
-    if (legendChecks['desig'] == true){
-      // add low stress designated
-      layerGroup.addLayer(layers['LSdesig'])
-    }else{
-      // add all low stress 
-      layerGroup.addLayer(layers['LSdesig'])
-      layerGroup.addLayer(layers['LSother'])
-    }
-  }
-  if (legendChecks['HS'] == true)
-  {
-    if (legendChecks['desig'] == true){
-      // add high stress designated
-      layerGroup.addLayer(layers['HSdesig'])
-    }else{
-      // add all high stress
-      layerGroup.addLayer(layers['HSdesig'])
-      layerGroup.addLayer(layers['HSother'])
-    }
-  }
+  addLayers();
 }
 
 // ------ Layers
-function addLayers() {
-  
-  layerGroup.addTo(map);
+function createLayers() {
+  var newLayer
   for (let setting of layerSettings) {
-    var ltsLayer = new L.GeoJSON.AJAX(setting.url, {
-      style: getLineStyle(setting.color),
-      onEachFeature: onEachFeature,
-    });
-    ltsLayer.layerID = setting.key;
+    if (setting.polygon){
+      var newLayer = new L.GeoJSON.AJAX(setting.url, {
+        style: {color: "#006d2c", weight: lineWeight, opacity: lineOpacity},
+        onEachFeature: onEachFeature,
+      });
+    }
+    else if (setting.point){
+      var geojsonMarkerOptions = {
+        radius: 7,
+        fillColor: "#74c476",
+        color: "#006d2c",
+        weight: lineWeight,
+        opacity: lineOpacity,
+        fillOpacity: 0.8
+      };
+      var newLayer = new L.GeoJSON.AJAX(setting.url, {
+        pointToLayer: function (feature, latlng) {
+          return L.circleMarker(latlng, geojsonMarkerOptions);
+        },
+        onEachFeature: onEachFeature,
+      });
+    }else{
+      // linestring
+      var newLayer = new L.GeoJSON.AJAX(setting.url, {
+        style: getLineStyle(setting.color, setting.dashed),
+        onEachFeature: onEachFeature,
+      });
+    }
+    newLayer.layerID = setting.key;
     // add to global layers dictionary
-    layers[setting.key] = ltsLayer
+    layers[setting.key] = newLayer
   }
+}
+
+function addLayers() {
   if (legendChecks['LS'] == true)
   {
     if (legendChecks['desig'] == true){
@@ -199,29 +225,82 @@ function addLayers() {
       layerGroup.addLayer(layers['HSother'])
     }
   }
+
+  // proposed
+  if (legendChecks['P_LS'] == true)
+  {
+    if (legendChecks['desig'] == true){
+      // add low stress designated
+      layerGroup.addLayer(layers['P_LSdesig'])
+      layerGroup.addLayer(layers['P_LSdesig_new'])
+    }else{
+      // add low stress other
+      layerGroup.addLayer(layers['P_LSother'])
+      layerGroup.addLayer(layers['P_LSother_new'])
+    }
+  }
+  if (legendChecks['P_HS'] == true)
+  {
+    if (legendChecks['desig'] == true){
+      // add low stress designated
+      layerGroup.addLayer(layers['P_HSdesig'])
+      layerGroup.addLayer(layers['P_HSdesig_new'])
+    }else{
+      // add low stress other
+      layerGroup.addLayer(layers['P_HSother'])
+      layerGroup.addLayer(layers['P_HSother_new'])
+    }
+  }
+
+  // amenities
+  if (legendChecks['amenity'] == true){
+    layerGroup.addLayer(layers['park'])
+    layerGroup.addLayer(layers['pool'])
+    layerGroup.addLayer(layers['school'])
+  }
 }
 
 // lines style
-function getLineStyle(color) {
-  var lineStyle = {
-    "color": color,
-    "weight": lineWeight,
-    "opacity": lineOpacity
-  };
+function getLineStyle(color, dashed) {
+  var lineStyle;
+  if (dashed){
+    lineStyle = {
+      "color": color,
+      "weight": lineWeight,
+      "opacity": lineOpacity,
+      "dashArray": "10"
+    };
+  }else{
+    lineStyle = {
+      "color": color,
+      "weight": lineWeight,
+      "opacity": lineOpacity,
+    };
+  }
   return lineStyle
 }
-function getHighlightStyle(color) {
-  var highlighStyle = {
+function getHighlightStyle(color, dashed) {
+  var highlighStyle
+  if (dashed){
+    highlighStyle = {
     "color": color,
     "weight": lineWeight + 1,
-    "opacity": lineHighOpacity
-  };
+    "opacity": lineHighOpacity,
+    "dashArray": "10"
+    };
+  }else{
+    highlighStyle = {
+      "color": color,
+      "weight": lineWeight + 1,
+      "opacity": lineHighOpacity
+      };
+  }
   return highlighStyle
 }
 
 function highlightFeature(e) {
   var layer = e.target;
-  var highlightStyle = getHighlightStyle(layer.options.color)
+  var highlightStyle = getHighlightStyle(layer.options.color, layer.options.dashArray)
   layer.setStyle(highlightStyle);
 
   if (!L.Browser.ie && !L.Browser.opera && !L.Browser.edge) {
@@ -231,7 +310,7 @@ function highlightFeature(e) {
 
 function resetHighlight(e) {
   var layer = e.target;
-  var lineStyle = getLineStyle(layer.options.color)
+  var lineStyle = getLineStyle(layer.options.color, layer.options.dashArray)
   layer.setStyle(lineStyle);
 }
 

@@ -70,54 +70,6 @@
           ]
         ]
       }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "highway": "tertiary",
-        "name": "Elmwood Steet"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.89318442344664,
-            49.26461907182617
-          ],
-          [
-            -122.8875195980072,
-            49.26482910972901
-          ],
-          [
-            -122.88631796836853,
-            49.26576726811297
-          ],
-          [
-            -122.88632869720458,
-            49.26646037367071
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "highway": "tertiary",
-        "name": "Kemsley Avenue"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.88632869720458,
-            49.26646037367071
-          ],
-          [
-            -122.88385033607483,
-            49.26655138680864
-          ]
-        ]
-      }
     }
   ]
 }

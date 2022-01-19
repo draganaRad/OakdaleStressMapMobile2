@@ -4,13 +4,70 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Glenayre Elementary"
+        "highway": "school",
+        "name": "Glenayre Elementary School"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -122.88778781890868,
           49.27404189259574
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "school",
+        "name": "Mountain View Elementary School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8792102, 
+          49.2596831
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "school",
+        "name": "Banting Middle School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8776035, 
+          49.264786
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "school",
+        "name": "Miller Park Community School"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.878127, 
+          49.266135
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "school",
+        "name": "Greater Heights Learning Academy"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.890590, 
+          49.267850
         ]
       }
     }

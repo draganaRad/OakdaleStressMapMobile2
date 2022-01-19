@@ -4,6 +4,7 @@
     {
       "type": "Feature",
       "properties": {
+        "highway": "park",
         "name": "Oakdale Park"
       },
       "geometry": {
@@ -37,7 +38,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "New Park"
+        "highway": "park",
+        "name": "<i>New Park</i>"
       },
       "geometry": {
         "type": "Polygon",
@@ -82,7 +84,8 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "New Park"
+        "highway": "park",
+        "name": "<i>New Park</i>"
       },
       "geometry": {
         "type": "Polygon",

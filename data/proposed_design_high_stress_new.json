@@ -5,6 +5,7 @@
       "type": "Feature",
       "properties": {
         "highway": "unclassified",
+        "type":"Proposed Cycle Route",
         "name": "Chapman Avenue"
       },
       "geometry": {
@@ -34,6 +35,7 @@
       "properties": {
         "id": "way/915295948",
         "highway": "tertiary",
+        "type":"Proposed Cycle Route",
         "name": "Glenayre Drive",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
       },
@@ -70,6 +72,65 @@
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/706065554",
+        "highway": "unclassified",
+        "type":"Proposed Cycle Route (Burnaby)",
+        "lanes": "2",
+        "lcn": "proposed",
+        "lcn_ref": "North Rd",
+        "name": "North Road",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8933764,
+            49.2696766
+          ],
+          [
+            -122.8932868,
+            49.2675978
+          ],
+          [
+            -122.8932638,
+            49.2664081
+          ],
+          [
+            -122.8932585,
+            49.2660664
+          ],
+          [
+            -122.8932457,
+            49.2657209
+          ],
+          [
+            -122.8932443,
+            49.2656608
+          ],
+          [
+            -122.8932232,
+            49.265149
+          ],
+          [
+            -122.8931419,
+            49.2630519
+          ],
+          [
+            -122.8931416,
+            49.2630276
+          ],
+          [
+            -122.893139,
+            49.2629599
+          ]
+        ]
+      },
+      "id": "way/706065554"
     }
   ]
 }

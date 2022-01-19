@@ -26,7 +26,8 @@ const layerSettings = [
 
   {key: 'park', color: '#f03b20', dashed: false, polygon: true, url: 'data/amenity_park.json'},
   {key: 'pool', color: '#f03b20', dashed: false, point:true, url: 'data/amenity_pool.json'},
-  {key: 'school', color: '#f03b20', dashed: false, point:true, url: 'data/amenity_school.json'}]
+  {key: 'school', color: '#f03b20', dashed: false, point:true, url: 'data/amenity_school.json'},
+  {key: 'food', color: '#f03b20', dashed: false, point:true, url: 'data/amenity_food.json'}]
 
 var lineWeight = 2
 if (!L.Browser.mobile) {
@@ -44,9 +45,9 @@ var centerCoord = [49.266787, -122.887519]
 if (L.Browser.mobile) {
   // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
   var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-  var map = L.map("map", { center: centerCoord, zoom: 14, renderer: myRenderer, zoomControl: false });
+  var map = L.map("map", { center: centerCoord, zoom: 13, renderer: myRenderer, zoomControl: false });
 } else {
-  var map = L.map("map", { center: centerCoord, zoom: 15 });
+  var map = L.map("map", { center: centerCoord, zoom: 14 });
 }
 L.tileLayer(
   'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -127,8 +128,13 @@ function addLegendLine(setting) {
     spanHtml = '<span style="display:inline-block; width:50px; height:8px; background-color:' + setting.color + '"></span>' +
     '&nbsp;' + setting.title
   }else{
-    // just title
-    spanHtml = setting.title
+    if (setting.key == "amenity"){
+      spanHtml = '<span style="display:inline-block; width:13px; height:13px; border:1px solid rgba(0,109,44); background-color:rgba(116,196,118,0.6);"></span>' +
+      '&nbsp;' + setting.title
+    }else{
+      // just title
+      spanHtml = setting.title
+    }
   }
 
   checkedHtml = ""
@@ -172,12 +178,14 @@ function createLayers() {
   var newLayer
   for (let setting of layerSettings) {
     if (setting.polygon){
+      // parks
       var newLayer = new L.GeoJSON.AJAX(setting.url, {
         style: {color: "#006d2c", weight: lineWeight, opacity: lineOpacity},
         onEachFeature: onEachFeature,
       });
     }
     else if (setting.point){
+      // school, pool, food
       var geojsonMarkerOptions = {
         radius: 7,
         fillColor: "#74c476",
@@ -193,7 +201,7 @@ function createLayers() {
         onEachFeature: onEachFeature,
       });
     }else{
-      // linestring
+      // roads (linestring)
       var newLayer = new L.GeoJSON.AJAX(setting.url, {
         style: getLineStyle(setting.color, setting.dashed),
         onEachFeature: onEachFeature,
@@ -257,6 +265,7 @@ function addLayers() {
     layerGroup.addLayer(layers['park'])
     layerGroup.addLayer(layers['pool'])
     layerGroup.addLayer(layers['school'])
+    layerGroup.addLayer(layers['food'])
   }
 }
 
@@ -455,6 +464,15 @@ function onEachFeature(feature, layer) {
     if (categoryValueToShow){
       popupContent += "<b>category: </b>";
       popupContent += categoryValueToShow;
+    }
+    // add type if it exist
+    if (feature.properties.type) {
+      let typeValue = feature.properties.type;
+      if (popupContent != ""){
+        popupContent += "<br>"
+      }
+      popupContent += "<b>type: </b>";
+      popupContent += typeValue;
     }
     // add name second
     if (feature.properties.name){

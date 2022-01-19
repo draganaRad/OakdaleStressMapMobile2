@@ -1,0 +1,33 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "food",
+        "name": "Safeway Burquitlam"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8880748152733,
+          49.262658674952725
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "transit",
+        "name": "Burquitlam SkyTrain Station/Bike Parkade"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.8902348,
+          49.2611364
+        ]
+      }
+    }
+  ]
+}

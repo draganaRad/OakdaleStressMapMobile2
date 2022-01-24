@@ -1,11 +1,11 @@
 
 // lines (layers)
 const legendSettings = [
-  {color: '#4292C6', key: 'LS', title: 'Low Stress', checked: true},
-  {color: '#F16913', key: 'HS', title: 'High Stress', checked: true},
+  {color: '#4292C6', key: 'LS', title: 'Current Low Stress', checked: false},
+  {color: '#F16913', key: 'HS', title: 'Current High Stress', checked: false},
   {color: '#31a354', key: 'P_LS', title: 'Proposed Low Stress', checked: true},
   {color: '#f03b20', key: 'P_HS', title: 'Proposed High Stress', checked: true},
-  {key: 'desig', title: 'Bike Designated Only', checked: true},
+  {key: 'desig', title: 'Bike Designated Only', checked: false},
   {key: 'amenity', title: 'Amenities', checked: true}]
 
 const layerSettings = [
@@ -41,13 +41,13 @@ var legendChecks = {}; //dictionary of legend checkbox ids(keys) and their state
 var layers = {};  //dictionary of layers with keys from settings
 
 // Create variable to hold map element, give initial settings to map
-var centerCoord = [49.266787, -122.887519] 
+var centerCoord = [49.266829, -122.885416] 
 if (L.Browser.mobile) {
   // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
   var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-  var map = L.map("map", { center: centerCoord, zoom: 13, renderer: myRenderer, zoomControl: false });
+  var map = L.map("map", { center: centerCoord, zoom: 15, renderer: myRenderer, zoomControl: false });
 } else {
-  var map = L.map("map", { center: centerCoord, zoom: 14 });
+  var map = L.map("map", { center: centerCoord, zoom: 16 });
 }
 L.tileLayer(
   'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
@@ -100,7 +100,7 @@ function addLegend() {
       '<div class="clearfix"></div>' +
       '<form><fieldset class="checkbox-pill clearfix">'
 
-    legendHtml += '<div class="button quiet col12">Tri-Cities Cycling Traffic Stress</div>'
+    legendHtml += '<div class="button quiet col12">Oakdale Cycling Traffic Stress</div>'
     for (let setting of legendSettings) {
       legendHtml += addLegendLine(setting)
     }
@@ -490,6 +490,15 @@ function onEachFeature(feature, layer) {
       }
       popupContent += "<b>road category: </b>";
       popupContent += highwayValueToShow;
+      // add road type if it exist
+      if (feature.properties.roadtype) {
+        let typeValue = feature.properties.roadtype;
+        if (popupContent != ""){
+          popupContent += "<br>"
+        }
+        popupContent += "<b>road type: </b>";
+        popupContent += typeValue;
+      }
     }
     // add surface and maxspeed
     if (feature.properties.surface){

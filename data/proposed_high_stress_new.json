@@ -4,30 +4,104 @@
     {
       "type": "Feature",
       "properties": {
-        "highway": "unclassified",
-        "name": "Chapman Avenue"
+        "id": "way/915295948",
+        "highway": "tertiary",
+        "type":"Proposed Cycle Route",
+        "name": "Glenayre Drive",
+        "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.89338827133177,
-            49.269708738654316
+            -122.8793455,
+            49.2700229
           ],
           [
-            -122.88173675537108,
-            49.269806746342944
+            -122.8801879,
+            49.2705048
           ],
           [
-            -122.88137197494505,
-            49.26968073642181
+            -122.8803168,
+            49.2705779
           ],
           [
-            -122.88053512573241,
-            49.26906468328556
+            -122.8803592,
+            49.2706116
+          ],
+          [
+            -122.8804326,
+            49.2706698
+          ],
+          [
+            -122.8804494,
+            49.2707076
+          ],
+          [
+            -122.8804535,
+            49.2707419
           ]
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/706065554",
+        "highway": "tertiary",
+        "type":"Proposed Cycle Route (Burnaby)",
+        "lanes": "2",
+        "lcn": "proposed",
+        "lcn_ref": "North Rd",
+        "name": "North Road",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8933764,
+            49.2696766
+          ],
+          [
+            -122.8932868,
+            49.2675978
+          ],
+          [
+            -122.8932638,
+            49.2664081
+          ],
+          [
+            -122.8932585,
+            49.2660664
+          ],
+          [
+            -122.8932457,
+            49.2657209
+          ],
+          [
+            -122.8932443,
+            49.2656608
+          ],
+          [
+            -122.8932232,
+            49.265149
+          ],
+          [
+            -122.8931419,
+            49.2630519
+          ],
+          [
+            -122.8931416,
+            49.2630276
+          ],
+          [
+            -122.893139,
+            49.2629599
+          ]
+        ]
+      },
+      "id": "way/706065554"
     },
     {
       "type": "Feature",
@@ -75,7 +149,7 @@
       "type": "Feature",
       "properties": {
         "highway": "tertiary",
-        "name": "Elmwood Steet"
+        "name": "Elmwood St"
       },
       "geometry": {
         "type": "LineString",
@@ -102,6 +176,27 @@
     {
       "type": "Feature",
       "properties": {
+        "highway": "residential",
+        "roadtype": "high density",
+        "name": "Elmwood St"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88637697696684,
+            49.267149969032786
+          ],
+          [
+            -122.8865110874176,
+            49.269071683932594
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "highway": "tertiary",
         "name": "Kemsley Avenue"
       },
@@ -115,6 +210,43 @@
           [
             -122.88385033607483,
             49.26655138680864
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "roadtype": "high density",
+        "name": "Harrison Ave to Gardena Dr"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88981556892395,
+            49.26704145466555
+          ],
+          [
+            -122.88968682289125,
+            49.266831426180055
+          ],
+          [
+            -122.88950443267822,
+            49.26673341258086
+          ],
+          [
+            -122.88933277130127,
+            49.266656401759164
+          ],
+          [
+            -122.88917183876038,
+            49.26654438580399
+          ],
+          [
+            -122.8891396522522,
+            49.26574626476226
           ]
         ]
       }

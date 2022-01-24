@@ -4,35 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "highway": "unclassified",
-        "type":"Proposed Cycle Route",
-        "name": "Chapman Avenue"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.89338827133177,
-            49.269708738654316
-          ],
-          [
-            -122.88173675537108,
-            49.269806746342944
-          ],
-          [
-            -122.88137197494505,
-            49.26968073642181
-          ],
-          [
-            -122.88053512573241,
-            49.26906468328556
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/915295948",
         "highway": "tertiary",
         "type":"Proposed Cycle Route",
@@ -77,7 +48,7 @@
       "type": "Feature",
       "properties": {
         "@id": "way/706065554",
-        "highway": "unclassified",
+        "highway": "tertiary",
         "type":"Proposed Cycle Route (Burnaby)",
         "lanes": "2",
         "lcn": "proposed",

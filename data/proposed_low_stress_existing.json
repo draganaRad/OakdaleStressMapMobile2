@@ -4,62 +4,11 @@
     {
       "type": "Feature",
       "properties": {
-        "highway": "residential",
-        "name": "Gilroy Place"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.89204582571983,
-            49.26972186469535
-          ],
-          [
-            -122.89205923676491,
-            49.270010636714126
-          ],
-          [
-            -122.89212360978128,
-            49.27011301911491
-          ]
-        ]
-      }
-    },
-    {
-        "type": "Feature",
-        "properties": {
-            "highway": "residential",
-            "name": "Chapman Court"
-        },
-        "geometry": {
-          "type": "LineString",
-          "coordinates": [
-            [
-              -122.8816106915474,
-              49.26976474307164
-            ],
-            [
-              -122.88136661052704,
-              49.26985925038173
-            ],
-            [
-              -122.88093477487563,
-              49.269876751715586
-            ],
-            [
-              -122.88078725337982,
-              49.26984524931018
-            ]
-          ]
-        }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "id": "way/822682658",
         "bicycle": "designated",
         "foot": "designated",
         "highway": "path",
+        "type":"Existing Citywide Greenway",
         "surface": "asphalt",
         "decisionMsg": "This way is a separated path because highway='path'.,Separated paths are always LTS=1.",
         "segregated": "no"
@@ -169,6 +118,1040 @@
           ]
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/97329576",
+        "bicycle": "permissive",
+        "foot": "yes",
+        "highway": "footway",
+        "type":"Existing Walkway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8886751,
+            49.2697276
+          ],
+          [
+            -122.8886944,
+            49.2698085
+          ],
+          [
+            -122.8887299,
+            49.27045
+          ]
+        ]
+      },
+      "id": "way/97329576"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/130623816",
+        "bicycle": "permissive",
+        "foot": "yes",
+        "highway": "footway",
+        "type":"Existing Walkway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8885871,
+            49.270447
+          ],
+          [
+            -122.888597,
+            49.2709201
+          ]
+        ]
+      },
+      "id": "way/130623816"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/75383034",
+        "bicycle": "permissive",
+        "foot": "yes",
+        "highway": "footway",
+        "type":"Existing Walkway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8869767,
+            49.2683523
+          ],
+          [
+            -122.8870603,
+            49.2690736
+          ]
+        ]
+      },
+      "id": "way/75383034"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/75383044",
+        "bicycle": "permissive",
+        "foot": "yes",
+        "highway": "footway",
+        "type":"Existing Walkway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8905393,
+            49.2651885
+          ],
+          [
+            -122.8897558,
+            49.2651885
+          ],
+          [
+            -122.8891794,
+            49.2651955
+          ]
+        ]
+      },
+      "id": "way/75383044"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/75383047",
+        "bicycle": "permissive",
+        "foot": "yes",
+        "highway": "footway",
+        "surface": "gravel",
+        "type":"Existing Walkway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8877378,
+            49.2670982
+          ],
+          [
+            -122.8877603,
+            49.2674148
+          ],
+          [
+            -122.8877785,
+            49.2676677
+          ],
+          [
+            -122.8878031,
+            49.2683365
+          ]
+        ]
+      },
+      "id": "way/75383047"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/772336646",
+        "bicycle": "permissive",
+        "foot": "yes",
+        "highway": "footway",
+        "type":"Existing Walkway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8870603,
+            49.2690736
+          ],
+          [
+            -122.8870948,
+            49.2697406
+          ]
+        ]
+      },
+      "id": "way/772336646"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Gilroy Place"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89204582571983,
+            49.26972186469535
+          ],
+          [
+            -122.89205923676491,
+            49.270010636714126
+          ],
+          [
+            -122.89212360978128,
+            49.27011301911491
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Chapman Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89338827133177,
+            49.269708738654316
+          ],
+          [
+            -122.88173675537108,
+            49.269806746342944
+          ],
+          [
+            -122.88137197494505,
+            49.26968073642181
+          ],
+          [
+            -122.88053512573241,
+            49.26906468328556
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+          "highway": "residential",
+          "name": "Chapman Court"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8816106915474,
+            49.26976474307164
+          ],
+          [
+            -122.88136661052704,
+            49.26985925038173
+          ],
+          [
+            -122.88093477487563,
+            49.269876751715586
+          ],
+          [
+            -122.88078725337982,
+            49.26984524931018
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31453809",
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Gilroy Crescent"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8920428,
+            49.2696973
+          ],
+          [
+            -122.8919913,
+            49.268706
+          ],
+          [
+            -122.8928067,
+            49.2676418
+          ],
+          [
+            -122.8932868,
+            49.2675978
+          ]
+        ]
+      },
+      "id": "way/31453809"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31453771",
+        "highway": "residential",
+        "name": "Nicola Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8877047,
+            49.2690721
+          ],
+          [
+            -122.887245,
+            49.2690731
+          ],
+          [
+            -122.8870603,
+            49.2690736
+          ],
+          [
+            -122.8861634,
+            49.2690756
+          ],
+          [
+            -122.8831594,
+            49.2691445
+          ],
+          [
+            -122.8822581,
+            49.2691652
+          ]
+        ]
+      },
+      "id": "way/31453771"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31453787",
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Bole Court"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8900258,
+            49.26893
+          ],
+          [
+            -122.8900345,
+            49.2697164
+          ]
+        ]
+      },
+      "id": "way/31453787"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31453791",
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Nicola Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8900258,
+            49.26893
+          ],
+          [
+            -122.8888241,
+            49.26893
+          ]
+        ]
+      },
+      "id": "way/31453791"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31453798",
+        "highway": "residential",
+        "name": "Stoney Creek Court"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8910054,
+            49.2700978
+          ],
+          [
+            -122.8909991,
+            49.2697119
+          ]
+        ]
+      },
+      "id": "way/31453798"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35199302",
+        "attribution": "GeoBase®",
+        "geobase:acquisitionTechnique": "GPS",
+        "highway": "service",
+        "is_in": "Port Moody,British Columbia",
+        "lanes": "2",
+        "service": "alley",
+        "source": "Geobase_Import_2009"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8890565,
+            49.2704385
+          ],
+          [
+            -122.8887299,
+            49.27045
+          ],
+          [
+            -122.8885871,
+            49.270447
+          ],
+          [
+            -122.883693,
+            49.2704902
+          ],
+          [
+            -122.8832781,
+            49.270571
+          ]
+        ]
+      },
+      "id": "way/35199302"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/446019657",
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8807847,
+            49.2698449
+          ],
+          [
+            -122.8806863,
+            49.2697948
+          ],
+          [
+            -122.8806246,
+            49.2697773
+          ],
+          [
+            -122.8805763,
+            49.2697843
+          ],
+          [
+            -122.8805441,
+            49.2697965
+          ],
+          [
+            -122.8801847,
+            49.2700485
+          ]
+        ]
+      },
+      "id": "way/446019657"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "service",
+        "service": "alley"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.87977337837218,
+            49.270282780918066
+          ],
+          [
+            -122.87934422492981,
+            49.27061880255849
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Ailsa Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88335680961607,
+            49.270576799978585
+          ],
+          [
+            -122.88053512573241,
+            49.270590800842534
+          ],
+          [
+            -122.88036346435547,
+            49.27063980383502
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31453764",
+        "highway": "residential",
+        "lanes": "2",
+        "name": "Thompson Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8910214,
+            49.2682747
+          ],
+          [
+            -122.8898818,
+            49.2682966
+          ],
+          [
+            -122.8878031,
+            49.2683365
+          ],
+          [
+            -122.8871752,
+            49.2683485
+          ],
+          [
+            -122.8869767,
+            49.2683523
+          ],
+          [
+            -122.8831157,
+            49.2684264
+          ],
+          [
+            -122.8819748,
+            49.2684483
+          ],
+          [
+            -122.8815467,
+            49.2683133
+          ]
+        ]
+      },
+      "id": "way/31453764"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/31453778",
+        "created_by": "Potlatch 0.10f",
+        "highway": "residential",
+        "name": "Bowron Street"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8831594,
+            49.2691445
+          ],
+          [
+            -122.8831157,
+            49.2684264
+          ]
+        ]
+      },
+      "id": "way/31453778"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35196863",
+        "attribution": "GeoBase®",
+        "geobase:acquisitionTechnique": "Orthophoto",
+        "highway": "service",
+        "service": "alley",
+        "is_in": "Coquitlam,British Columbia",
+        "lanes": "1",
+        "source": "Geobase_Import_2009",
+        "surface": "unpaved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8898415,
+            49.2676618
+          ],
+          [
+            -122.8885906,
+            49.2676786
+          ],
+          [
+            -122.8882057,
+            49.2676872
+          ],
+          [
+            -122.8878896,
+            49.2676869
+          ],
+          [
+            -122.8877785,
+            49.2676677
+          ],
+          [
+            -122.8876285,
+            49.2676417
+          ],
+          [
+            -122.8873673,
+            49.2676324
+          ],
+          [
+            -122.8869824,
+            49.2676591
+          ],
+          [
+            -122.8866799,
+            49.2676857
+          ],
+          [
+            -122.88635,
+            49.2676944
+          ],
+          [
+            -122.8858827,
+            49.267694
+          ],
+          [
+            -122.8854153,
+            49.2676935
+          ],
+          [
+            -122.8838188,
+            49.2677459
+          ],
+          [
+            -122.8837045,
+            49.2677157
+          ]
+        ]
+      },
+      "id": "way/35196863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/50048418",
+        "highway": "service",
+        "service": "alley",
+        "source": "Yahoo"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8837045,
+            49.2677157
+          ],
+          [
+            -122.8837045,
+            49.2672187
+          ]
+        ]
+      },
+      "id": "way/50048418"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Harrison Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88981020450592,
+            49.26704845559967
+          ],
+          [
+            -122.88368940353394,
+            49.26721647772053
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Westley Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8891396522522,
+            49.26574626476226
+          ],
+          [
+            -122.8888875246048,
+            49.265641247874626
+          ],
+          [
+            -122.8857171535492,
+            49.26577426922787
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Elmwood St"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8863692,
+            49.2671355
+          ],
+          [
+            -122.8863317,
+            49.2664548
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/35196194",
+        "attribution": "GeoBase®",
+        "geobase:acquisitionTechnique": "Orthophoto",
+        "highway": "service",
+        "is_in": "Coquitlam,British Columbia",
+        "lanes": "1",
+        "service": "alley",
+        "source": "Geobase_Import_2009",
+        "surface": "asphalt"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8918204,
+            49.2635641
+          ],
+          [
+            -122.8912527,
+            49.2636019
+          ],
+          [
+            -122.891204,
+            49.2636271
+          ],
+          [
+            -122.8911776,
+            49.2636568
+          ],
+          [
+            -122.891196,
+            49.2642899
+          ],
+          [
+            -122.8912091,
+            49.2645957
+          ],
+          [
+            -122.8912617,
+            49.2657532
+          ]
+        ]
+      },
+      "id": "way/35196194"
+    },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/31453613",
+          "highway": "residential",
+          "lanes": "2",
+          "name": "Claremont Street"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -122.8912617,
+              49.2657532
+            ],
+            [
+              -122.8907038,
+              49.2655247
+            ],
+            [
+              -122.8905493,
+              49.2653791
+            ],
+            [
+              -122.8905393,
+              49.2651885
+            ],
+            [
+              -122.890474,
+              49.263065
+            ]
+          ]
+        },
+        "id": "way/31453613"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "@id": "way/31453623",
+          "highway": "residential",
+          "lanes": "2",
+          "name": "Tyndall Street"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -122.8919022,
+              49.265764
+            ],
+            [
+              -122.8918724,
+              49.2652224
+            ],
+            [
+              -122.8918672,
+              49.2650696
+            ],
+            [
+              -122.8918204,
+              49.2635641
+            ],
+            [
+              -122.8918032,
+              49.2631006
+            ],
+            [
+              -122.8918022,
+              49.263072
+            ],
+            [
+              -122.8917999,
+              49.2629841
+            ]
+          ]
+        },
+        "id": "way/31453623"
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "highway": "service",
+          "service": "alley"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -122.88570642471313,
+              49.26577426922787
+            ],
+            [
+              -122.88570642471313,
+              49.265641247874626
+            ],
+            [
+              -122.88800239562988,
+              49.263817418945635
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "highway": "service",
+          "service": "alley"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -122.88727015256883,
+              49.26570950887701
+            ],
+            [
+              -122.88773953914641,
+              49.265305192332136
+            ],
+            [
+              -122.88791120052336,
+              49.26525618404095
+            ],
+            [
+              -122.88828402757645,
+              49.26525443374395
+            ],
+            [
+              -122.88855224847792,
+              49.26523343017495
+            ],
+            [
+              -122.8886166214943,
+              49.26489912216459
+            ],
+            [
+              -122.88861125707626,
+              49.26478885253355
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {          
+          "highway": "residential",
+          "name": "Gardena Dr"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -122.88913697004318,
+              49.265744514482634
+            ],
+            [
+              -122.8891611099243,
+              49.26561149304914
+            ],
+            [
+              -122.88917988538742,
+              49.26452805512393
+            ],
+            [
+              -122.88904041051863,
+              49.264172738314066
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {          
+          "highway": "residential",
+          "name": "Gardena Dr"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -122.88892909884451,
+              49.2637045213693
+            ],
+            [
+              -122.88916379213335,
+              49.26353123621477
+            ],
+            [
+              -122.8892295062542,
+              49.26346734810019
+            ],
+            [
+              -122.88925766944885,
+              49.263440217506
+            ],
+            [
+              -122.88927644491194,
+              49.2634091485814
+            ],
+            [
+              -122.88929186761378,
+              49.26338114277345
+            ],
+            [
+              -122.88930527865887,
+              49.26334657308233
+            ],
+            [
+              -122.88930997252464,
+              49.26331812964743
+            ],
+            [
+              -122.88931466639043,
+              49.263277871219266
+            ],
+            [
+              -122.88930997252464,
+              49.263174161856234
+            ]
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "highway": "service",
+          "service": "alley"
+        },
+        "geometry": {
+          "type": "LineString",
+          "coordinates": [
+            [
+              -122.88904175162315,
+              49.26417536381712
+            ],
+            [
+              -122.88927242159843,
+              49.26408609663498
+            ],
+            [
+              -122.88946151733398,
+              49.263941693498445
+            ],
+            [
+              -122.8895929455757,
+              49.263834047248984
+            ],
+            [
+              -122.88963720202446,
+              49.26379291406729
+            ]
+          ]
+        }
+      }
   ]
 }

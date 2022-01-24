@@ -5,6 +5,300 @@
       "type": "Feature",
       "properties": {
         "highway": "residential",
+        "type":"Proposed Cycle Route",
+        "name": "Chapman Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89338827133177,
+            49.269708738654316
+          ],
+          [
+            -122.88173675537108,
+            49.269806746342944
+          ],
+          [
+            -122.88137197494505,
+            49.26968073642181
+          ],
+          [
+            -122.88053512573241,
+            49.26906468328556
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Neighbourhood Greenway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88082212209703,
+            49.26987500158247
+          ],
+          [
+            -122.88083285093307,
+            49.270569799545136
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Neighbourhood Greenway",
+        "name":"Elmwood St"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89316296577454,
+            49.26464707693153
+          ],
+          [
+            -122.88753032684326,
+            49.26486411595922
+          ],
+          [
+            -122.8863823413849,
+            49.26576026699705
+          ],
+          [
+            -122.8865647315979,
+            49.269071683932594
+          ],
+          [
+            -122.88703680038452,
+            49.269071683932594
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Neighbourhood Greenway",
+        "name":"Westley Ave"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8862965106964,
+            49.26574626476226
+          ],
+          [
+            -122.88532018661498,
+            49.26574626476226
+          ],
+          [
+            -122.88420438766478,
+            49.26653738479835
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Neighbourhood Greenway",
+        "name":"Gardenia Dr/Kemsley Ave"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89045929908752,
+            49.26699944903998
+          ],
+          [
+            -122.89049148559572,
+            49.26642536857295
+          ],
+          [
+            -122.89040565490721,
+            49.26637636139438
+          ],
+          [
+            -122.88383960723876,
+            49.26659339281568
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Neighbourhood Greenway",
+        "name":"Claremont St"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89057731628418,
+            49.26472059025749
+          ],
+          [
+            -122.8905290365219,
+            49.2631172747713
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Neighbourhood Greenway",
+        "name":"Harrison Ave To Clark Rd"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88314759731291,
+            49.26707645932622
+          ],
+          [
+            -122.88369476795197,
+            49.26721647772053
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Neighbourhood Greenway",
+        "name":"Thompson Ave"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88698315620421,
+            49.26839961728764
+          ],
+          [
+            -122.88642525672914,
+            49.26842061950885
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Green Street",
+        "name":"Nicola Ave To Thompson Ave"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88990139961243,
+            49.26832960981897
+          ],
+          [
+            -122.88992285728453,
+            49.26892467013629
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Citywide Greenway",
+        "name":"Clark Rd"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.87830352783203,
+            49.270912819616406
+          ],
+          [
+            -122.88056731224059,
+            49.26921169666463
+          ],
+          [
+            -122.88200497627258,
+            49.26807058132114
+          ],
+          [
+            -122.8839898109436,
+            49.266502379755224
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "path",
+        "bicycle": "designated",
+        "foot": "designated",
+        "type": "Proposed Citywide Greenway",
+        "name":"Como Lake Ave"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.8881311416626,
+            49.263309815409535
+          ],
+          [
+            -122.89243340492249,
+            49.26302275454668
+          ],
+          [
+            -122.8931415081024,
+            49.26302975605101
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
         "name": "Nicola Avenue"
       },
       "geometry": {
@@ -28,19 +322,89 @@
     {
       "type": "Feature",
       "properties": {
-        "highway": "path",
-        "name": "Neighbourhood Greenway"
+        "highway": "residential",
+        "name": "Bole Court To Harrison Ave"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.88082212209703,
-            49.26987500158247
+            -122.88990139961243,
+            49.26832260906662
           ],
           [
-            -122.88083285093307,
-            49.270569799545136
+            -122.88981556892395,
+            49.26704145466555
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "service",
+        "service": "alley",
+        "id": "4b"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88888216018678,
+            49.26381391824947
+          ],
+          [
+            -122.88801312446594,
+            49.26381391824947
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "service",
+        "service": "alley",
+        "id": "4a"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89053440093996,
+            49.2637789112742
+          ],
+          [
+            -122.88964390754698,
+            49.26379291406729
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Gardena Dr"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88903906941414,
+            49.264170987978616
+          ],
+          [
+            -122.88891837000847,
+            49.26396182244585
+          ],
+          [
+            -122.88888081908226,
+            49.26381391824947
+          ],
+          [
+            -122.88893043994904,
+            49.2637045213693
           ]
         ]
       }

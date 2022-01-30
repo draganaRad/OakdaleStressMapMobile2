@@ -4,35 +4,6 @@
     {
       "type": "Feature",
       "properties": {
-        "highway": "residential",
-        "type":"Proposed Cycle Route",
-        "name": "Chapman Avenue"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.89338827133177,
-            49.269708738654316
-          ],
-          [
-            -122.88173675537108,
-            49.269806746342944
-          ],
-          [
-            -122.88137197494505,
-            49.26968073642181
-          ],
-          [
-            -122.88053512573241,
-            49.26906468328556
-          ]
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "highway": "path",
         "bicycle": "designated",
         "foot": "designated",

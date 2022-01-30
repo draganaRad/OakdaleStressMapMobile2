@@ -4,6 +4,34 @@
     {
       "type": "Feature",
       "properties": {
+        "highway": "residential",
+        "name": "Chapman Avenue"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.89338827133177,
+            49.269708738654316
+          ],
+          [
+            -122.88173675537108,
+            49.269806746342944
+          ],
+          [
+            -122.88137197494505,
+            49.26968073642181
+          ],
+          [
+            -122.88053512573241,
+            49.26906468328556
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "highway": "tertiary",
         "name": "North Rd"
       },
@@ -88,56 +116,19 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "way/31453608",
-        "highway": "residential",
-        "roadtype": "high density",
-        "lanes": "2",
-        "name": "Jefferson Avenue"
-      },
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [
-          [
-            -122.8932457,
-            49.2657209
-          ],
-          [
-            -122.893088,
-            49.2657228
-          ],
-          [
-            -122.8919022,
-            49.265764
-          ],
-          [
-            -122.891332,
-            49.2657812
-          ],
-          [
-            -122.8912617,
-            49.2657532
-          ]
-        ]
-      },
-      "id": "way/31453608"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "highway": "residential",
-        "roadtype": "high density",
+        "highway": "tertiary",
         "name": "Kemsley Avenue"
       },
       "geometry": {
         "type": "LineString",
         "coordinates": [
           [
-            -122.8891611099243,
-            49.266362359334416
+            -122.88632869720458,
+            49.26646037367071
           ],
           [
-            -122.88632869720458,
-            49.26645337265316
+            -122.88385033607483,
+            49.26655138680864
           ]
         ]
       }

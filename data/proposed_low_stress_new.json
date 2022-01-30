@@ -409,5 +409,83 @@
         ]
       }
     }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Elmwood St"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88637697696684,
+            49.267149969032786
+          ],
+          [
+            -122.8865110874176,
+            49.269071683932594
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "residential",
+        "name": "Harrison Ave to Gardena Dr"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88981556892395,
+            49.26704145466555
+          ],
+          [
+            -122.88968682289125,
+            49.266831426180055
+          ],
+          [
+            -122.88950443267822,
+            49.26673341258086
+          ],
+          [
+            -122.88933277130127,
+            49.266656401759164
+          ],
+          [
+            -122.88917183876038,
+            49.26654438580399
+          ],
+          [
+            -122.8891396522522,
+            49.26574626476226
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "service",
+        "service": "alley",
+        "id": "NewPark"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -122.88195669651031,
+            49.269768243345624
+          ],
+          [
+            -122.8819191455841,
+            49.269183694150016
+          ]
+        ]
+      }
+    }
   ]
 }

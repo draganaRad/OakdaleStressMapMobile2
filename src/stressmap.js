@@ -5,7 +5,7 @@ const legendSettings = [
   {color: '#F16913', key: 'HS', title: 'Current High Stress', checked: false},
   {color: '#31a354', key: 'P_LS', title: 'Proposed Low Stress', checked: true},
   {color: '#f03b20', key: 'P_HS', title: 'Proposed High Stress', checked: true},
-  {key: 'desig', title: 'Bike Designated Only', checked: false},
+  {key: 'desig', title: 'Bike Designated Only', checked: true},
   {key: 'amenity', title: 'Amenities', checked: true}]
 
 const layerSettings = [

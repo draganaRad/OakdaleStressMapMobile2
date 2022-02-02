@@ -691,8 +691,7 @@
         "service": "alley",
         "is_in": "Coquitlam,British Columbia",
         "lanes": "1",
-        "source": "Geobase_Import_2009",
-        "surface": "unpaved"
+        "source": "Geobase_Import_2009"
       },
       "geometry": {
         "type": "LineString",

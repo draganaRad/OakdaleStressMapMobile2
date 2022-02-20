@@ -28,6 +28,48 @@
           49.2611364
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "community centre/library",
+        "name": "Cameron Community Centre"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.89906114339827,
+          49.25389895044102
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "food",
+        "name": "Save-On-Foods"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.89333462715149,
+          49.25266469164074
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "highway": "food",
+        "name": "Walmart"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -122.89601281285286,
+          49.251919744622526
+        ]
+      }
     }
   ]
 }

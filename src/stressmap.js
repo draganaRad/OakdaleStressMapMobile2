@@ -1,12 +1,12 @@
 
 // lines (layers)
 const legendSettings = [
-  {color: '#4292C6', key: 'LS', title: 'Current Low Stress', checked: false},
-  {color: '#F16913', key: 'HS', title: 'Current High Stress', checked: false},
+  {color: '#4292C6', key: 'LS', title: 'Current Low Stress', checked: true},
+  {color: '#F16913', key: 'HS', title: 'Current High Stress', checked: true},
   {color: '#31a354', key: 'P_LS', title: 'Proposed Low Stress', checked: true},
   {color: '#f03b20', key: 'P_HS', title: 'Proposed High Stress', checked: true},
   {key: 'desig', title: 'Bike Designated Only', checked: true},
-  {key: 'amenity', title: 'Amenities', checked: true}]
+  {key: 'amenity', title: 'Destinations', checked: true}]
 
 const layerSettings = [
   {key: 'LSdesig', color: '#4292C6', dashed: false, url: 'data/design_low_stress.json'},
@@ -45,9 +45,9 @@ var centerCoord = [49.266829, -122.885416]
 if (L.Browser.mobile) {
   // increase tolerance for tapping (it was hard to tap on line exactly), zoom out a bit, and remove zoom control
   var myRenderer = L.canvas({ padding: 0.1, tolerance: 5 });
-  var map = L.map("map", { center: centerCoord, zoom: 15, renderer: myRenderer, zoomControl: false });
+  var map = L.map("map", { center: centerCoord, zoom: 13, renderer: myRenderer, zoomControl: false });
 } else {
-  var map = L.map("map", { center: centerCoord, zoom: 16 });
+  var map = L.map("map", { center: centerCoord, zoom: 14 });
 }
 L.tileLayer(
   'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {

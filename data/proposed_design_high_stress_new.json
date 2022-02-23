@@ -6,7 +6,8 @@
       "properties": {
         "highway": "unclassified",
         "type":"Proposed Cycle Route",
-        "name": "Chapman Avenue"
+        "name": "Chapman Avenue",
+        "note": "This can be low traffic stress route if City of Coquitlam follows recommendations of <a href='img/image002.jpg' target=\"_blank\">Figure D-29</a> in <a href=\"https://www2.gov.bc.ca/assets/gov/driving-and-transportation/funding-engagement-permits/grants-funding/cycling-infrastructure-funding/active-transportation-guide/2019-06-14_bcatdg_compiled_digital.pdf\" target=\"_blank\">BC Active Transporation Design Guide</a>"
       },
       "geometry": {
         "type": "LineString",
@@ -37,6 +38,7 @@
         "highway": "tertiary",
         "type":"Proposed Cycle Route",
         "name": "Glenayre Drive",
+        "note": "This can be low traffic stress route if City of Coquitlam follows recommendations of <a href='img/image002.jpg' target=\"_blank\">Figure D-29</a> in <a href=\"https://www2.gov.bc.ca/assets/gov/driving-and-transportation/funding-engagement-permits/grants-funding/cycling-infrastructure-funding/active-transportation-guide/2019-06-14_bcatdg_compiled_digital.pdf\" target=\"_blank\">BC Active Transporation Design Guide</a>",
         "decisionMsg": "Does not meet criteria for Separated Path or Bike Lane. Treating as Mixed Traffic.,No 'lanes' tag. Assuming default of 2.,No maxspeed tag. Using default value of 50 when highway='tertiary'.,Setting LTS to 3 because maxspeed is up to 50 km/h and lanes are 3 or less on non-residential highway."
       },
       "geometry": {
@@ -83,7 +85,8 @@
         "lcn": "proposed",
         "lcn_ref": "North Rd",
         "name": "North Road",
-        "surface": "asphalt"
+        "surface": "asphalt",
+        "note": "This can be low traffic stress route if City of Burnaby follows recommendations of <a href='img/image002.jpg' target=\"_blank\">Figure D-29</a> in <a href=\"https://www2.gov.bc.ca/assets/gov/driving-and-transportation/funding-engagement-permits/grants-funding/cycling-infrastructure-funding/active-transportation-guide/2019-06-14_bcatdg_compiled_digital.pdf\" target=\"_blank\">BC Active Transporation Design Guide</a>"
       },
       "geometry": {
         "type": "LineString",

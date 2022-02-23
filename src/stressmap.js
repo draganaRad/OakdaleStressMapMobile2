@@ -540,6 +540,13 @@ function onEachFeature(feature, layer) {
       popupContent += "<b>incline: </b>";
       popupContent += feature.properties.incline;
     }
+    if (feature.properties.note){
+      if (popupContent != ""){
+        popupContent += "<br>"
+      }
+      popupContent += "<b>note: </b>";
+      popupContent += feature.properties.note;
+    }
 
     // FOR TEST
   // popupContent += "<br>=================";

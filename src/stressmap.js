@@ -58,6 +58,8 @@ L.tileLayer(
 ).addTo(map);
 // Add BikeOttawa attribution
 map.attributionControl.addAttribution('<a href="https://github.com/BikeOttawa">BikeOttawa</a>');
+map.attributionControl.addAttribution('<a href="https://www.coquitlam.ca/1072/Oakdale-Transportation-Network-Update">City Of Coquitlam</a>');
+map.attributionControl.addAttribution('updated 2022-02-23');
 
 // add geolocation on mobile
 if (L.Browser.mobile) {
